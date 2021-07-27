@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 
 // define paths for Express config
@@ -34,7 +34,7 @@ app.get('',(req, res) => {
 })
 app.get('/about',(req, res) => {
   res.render('about',{
-    title:'about me',
+    title:'About',
     name:'KaMaL'
   })
 })
